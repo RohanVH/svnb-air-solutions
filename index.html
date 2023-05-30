@@ -13,7 +13,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -323,11 +323,32 @@
 				width: 705px;
 				height: 230px;
 			}
-
+			@media only screen and (max-width: 800px) {
+ 			 .logo{
+				/* padding-top: 50px; */
+				position: relative;
+				bottom: 180px;
+    			width: 305px;
+				height: 130px;
+  				}
+				.row{
+					position: relative;
+					left:15%;
+				}
+				.mobile{
+					padding-top: 100px;
+				}
+				.figcaption{
+					position: absolute;
+					display: flex;
+					/* align-items: center; */
+					justify-content: center;
+				}
+			}
 
 			
 	</style>
-	<body class="is-preload landing">
+	<body class="">
 
 		<div id="page-wrapper">
 			<br>
@@ -385,12 +406,13 @@
 						
 					<div class="content">
 						<center><a href="index.html" ><img style="text-decoration: none;" class="logo" src="images/logo.png" alt="svnb logo" srcset=""/></a></center>
+						<div class="mobile">
 						<header style="font-family: 'Righteous', cursive;" style="margin-top: -80px;">
 							<h2 style="color: rgb(71, 192, 232); ">The future has landed</h2>
 							<p>Leave you HVAC worries to us and enjoy the perfect temperature all year round.<br />
 							We dont just fix your HVAC, we make it better than ever.</p>
 						</header>
-						<span class="image" id="img-hover-zoom" style="border-radius: 28%;"><img src="images/img1.jpg" alt="SVNB AIR SOLUTIONS" /></span>
+						<span class="im" id="img-hover-zoom" style="border-radius: 28%;"><img src="images/img1.jpg" alt="SVNB AIR SOLUTIONS" /></span>
 						<div class="row" style="margin-top:-250px;text-align: center;color:white;font-family:sans-serif;font-weight: bold;">
 							<div class="col-4 col-12-medium" style="display: block; justify-content: center;">
 								<header>
@@ -400,7 +422,7 @@
 											<img src="./images/t-001.jpg" alt="Air Conditioning Services">
 											<img src="./images/t-0001.jpg" alt="Air Conditioning Services">
 											<img src="./images/t-00001.jpeg" alt="Air Conditioning Services">
-											<figcaption >Air Conditioning Services</figcaption>
+											<figcaption>Air Conditioning Services</figcaption>
 										</div>	
 									</a>
 								</header>
@@ -434,6 +456,7 @@
 						</div>
 						
 							
+					</div>
 					</div>
 					<div style="margin-top: 10px;"></div>
 					<!-- <a href="#one" class="goto-next scrolly" >Next</a> -->
@@ -497,8 +520,15 @@
 							<h2 style="color: #136dd4;font-family: Georgia, 'Times New Roman', Times, serif;">What We Offer</h2>
 							<p>Our HVAC products are designed to exceed your expectations and surpass the competition.</p>
 						</header>
-						<div style="height:270px;width:427px;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-
+						<div class="ctn" style="height:270px;width:350px;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+<style>
+	@media only screen and (max-width: 800px){
+		.ctn{
+			width: 350px;
+			/* margin-left: 10px; */
+		}
+	}
+</style>
 							<p>SVNB Air Solutions offers a wide range of HVAC services and products to address any issues with your air conditioning or heating system. 
 								If you are experiencing inconsistent temperatures, unusual noises, or unexpectedly high utility bills, it may be time to call our HVAC specialists for a repair or replacement. <span id="dots">...</span><span id="more">
 									We specialize in both gas and electric systems and provide prompt and reliable service to address any concerns you have about 
@@ -537,7 +567,7 @@
 							<h2 style="color: #136dd4;font-family: Georgia, 'Times New Roman', Times, serif;">HVAC</h2>
 							<p>Whether it's heating or cooling, HVAC is the answer to your comfort needs.</p>
 						</header>
-						<div style="height:370px;width:415px;font:16px/26px Georgia, Garamond, Serif;overflow:auto;	scrollbar-color: grey">
+						<div class="ctn" style="height:370px;width:350px;font:16px/26px Georgia, Garamond, Serif;overflow:auto;	scrollbar-color: grey">
 
 							<p>
 								Heating, ventilation, and air conditioning (HVAC) is a technological marvel that ensures indoor and 
